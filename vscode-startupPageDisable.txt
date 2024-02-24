@@ -1,0 +1,1 @@
+Alternatively, you can go to File > Preferences > Settings, search "Startup Editor" in "Search Settings" and choose "None" from the drop-down menu.

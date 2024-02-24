@@ -1,0 +1,1 @@
+Region -> Administrative -> Change system locale -> Use Unicode UTF-8

@@ -1,0 +1,8 @@
+önce node.js kurulmalı
+
+
+npm i bootstrap@5.3.1
+
+npm i bootstrap-icons
+
+ardından bu dosyalar kurulabilir.

@@ -1,0 +1,19 @@
+https://getcomposer.org/
+
+
+composer global require laravel/installer
+ 
+htdocs içinde --> laravel new blog
+
+ya da
+
+composer create-project --prefer-dist laravel/laravel blog
+
+laravel new example-app başka klasörlerde kurulabilir
+
+
+xampp/php/php.ini içindeki
+;extension=zip nin başındaki ; kaldır
+
+php artisan serve ile localhost:8000 portu açılır
+

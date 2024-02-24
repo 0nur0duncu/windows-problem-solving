@@ -1,0 +1,7 @@
+http://192.168.1.1/default.html#more/powerSaving.html ( Güç Modu )
+http://192.168.1.1/default.html#more/ussdSetting.html ( USSD Modu )
+http://192.168.1.1/default.html#more/diagnostic.html ( Tanılama Modu )
+http://192.168.1.1/default.html#more/tr069.html ( İstemci Yapılandırma )
+http://192.168.1.1/default.html#more/pingSetting.html ( Ping Modu )
+http://192.168.1.1/default.html#more/dnsSetting.html ( DNS Modu )
+http://192.168.1.1/default.html#settings/portForwarding.html (Port yönlendirme )

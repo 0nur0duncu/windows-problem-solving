@@ -1,0 +1,6 @@
+net7.0 yukarı çıkart ortam değişkenlerinde
+
+dotnet new console --use-program-main
+dotnet run
+
+.NET Core Extension Pack

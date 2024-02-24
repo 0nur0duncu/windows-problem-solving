@@ -1,0 +1,31 @@
+choco indir --> choco install virtualmachineconverter
+
+https://www.mysysadmintips.com/-downloads-/Windows/Servers/dsfok.zip indir
+
+metasploitable ile aynı klasörün içine at ve dsfok klasörünün içine gir
+
+./dsfo ../Metasploitable.vmdk 512 1024 ../descriptor.txt
+
+bir üst klasördeki descriptor.txt içindeki
+
+#ddb.uuid.image="f755cedf-59f9-49e5-9c31-79edc45fd649"
+#ddb.uuid.modification="0a4bd86b-9d77-4964-8a06-c5a9b543a137"
+#ddb.uuid.parent = "00000000-0000-0000-0000-000000000000"
+#ddb.uuid.parentmodification = "00000000-0000-0000-0000-000000000000"
+
+bu şekilde yorum satırı yap
+
+dsfok klasörü içinde
+
+./dsfi ../Metasploitable.vmdk 512 1024 ../descriptor.txt
+
+Import-Module "C:\Program Files\Microsoft Virtual Machine Converter\MvmcCmdlet.psd1"
+
+ConvertTo-MvmcVirtualHardDisk -SourceLiteralPath "Metasploitable.vmdk" -DestinationLiteralPath "." -VhdType DynamicHardDisk -VhdFormat Vhdx
+
+
+linkler
+-----------------------------------------------
+https://bobmckay.com/i-t-support-networking/ethical-hacking/deploying-metasploitable-2-on-a-microsoft-server-with-hyper-v/
+
+https://www.mysysadmintips.com/windows/servers/801-convertto-mvmcvirtualharddisk-the-entry-is-not-a-supported-disk-database-entry-for-the-descriptor

@@ -1,0 +1,17 @@
+There are some more configurations to be made in the cfg file,
+
+Set
+
+Search for phrase 'yolo' and in the above convolution layer set filters = (num classes + 5) *3.
+Note. This will need to be done in 3 places, for classes = 1, filters will be 18
+
+Max_batches needs to be (num classes * 2000), minimum 4000, in this scenario it needs to be 4000.
+
+Steps, below max_batches needs to be 80%, 90% of Max batches value, so here it should be 3200, 3600.
+
+Fist of all we will comment lines 3 and 4 (batch, subdivisions) to unset testing mode
+We will uncomment lines 6 and 7(batch, subdivisions) to set to training mode
+We change our max_batches value to 2000 * number_of_classes (if there's one class like our case, set to 4000)
+We change our step tuple-like values to 80%, 90% value of our max_baches value. In this case it will be 3200, 3600.
+For all YOLO layers and convoloutional layers before them, changed the classes value to number of classes, In this case 1, and change the value of filters according to following formula(In this case, 18)
+Formula for conv layers filters value: (number_of_classes + 5)*3

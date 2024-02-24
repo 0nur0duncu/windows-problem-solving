@@ -1,0 +1,1 @@
+php/php.ini içerisinde ayar yapılabilir uzantılar için

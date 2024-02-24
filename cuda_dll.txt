@@ -1,0 +1,11 @@
+"I found a copy of the 64 bit zlibwapi.dll hiding under a different name in: C:\Program Files\NVIDIA Corporation\Nsight Systems 2022.4.2\host-windows-x64\zlib.dll
+
+I copied and renamed it to: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.8\bin\zlibwapi.dll
+
+since that folder is already in my PATH variable; and it worked. Turns out the CUDA Toolkit already has the file you need elsewhere. Seems like they could save a lot of trouble if they just made a change to the CUDA Toolkit installer. "
+
+
+You may need to change the cfg file subdivision. I think it is due to RAM problem as stated by others and i change it from 16 to 64 while maintaining the batch size at 64 and it works for me.
+
+https://www.dll4free.com/zlibwapi.dll.html
+
